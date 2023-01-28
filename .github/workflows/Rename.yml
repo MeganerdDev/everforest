@@ -1,0 +1,13 @@
+name: Rename
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: "Everforest"
+          replace: "Neverforest"
+          regex: false
