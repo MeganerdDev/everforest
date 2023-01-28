@@ -10,5 +10,4 @@ jobs:
         with:
           find: "everforest"
           replace: "neverforest"
-          include: "**/*.*"
-          regex: true
+          regex: false
