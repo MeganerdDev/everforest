@@ -1,4 +1,4 @@
-name: Rename
+name: Rename String
 on: [push, pull_request]
 jobs:
   build:
@@ -10,4 +10,4 @@ jobs:
         with:
           find: "everforest"
           replace: "neverforest"
-          regex: false
+          regex: true
